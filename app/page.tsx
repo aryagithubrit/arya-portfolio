@@ -9,7 +9,7 @@ import { Experience, Achievements } from '@/components/ExperienceAchievements';
 import Contact from '@/components/Contact';
 
 const PCBBackground = dynamic(() => import('@/components/PCBBackground'), { ssr: false });
-const RunningAvatar = dynamic(() => import('@/components/RunningAvatar'), { ssr: false });
+const ProjectGalaxy = dynamic(() => import('@/components/ProjectGalaxy'), { ssr: false });
 
 export default function Home() {
   return (
@@ -26,7 +26,9 @@ export default function Home() {
         <Achievements />
         <Contact />
       </div>
-      <RunningAvatar />
+      
+      <ProjectGalaxy />
     </main>
   );
 }
+
